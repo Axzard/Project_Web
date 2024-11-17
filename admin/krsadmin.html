@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kartu Rencana Studi (KRS)</title>
+    <link rel="stylesheet" href="krsadmin.css">
+    <link rel="stylesheet" href="styles.homeadmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-home">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- Beranda -->
+    <div class="container">
+<nav class="beranda">
+    <a href="#" class="menu-item" onclick="showDashboard()">
+        <i class="fas fa-home"></i>
+        Beranda
+    </a>
+    <div class="menu-item-menutup">
+        <a href="#" class="menu-item">
+            <i class="fas fa-graduation-cap"></i>
+            Akademik
+            <i class="fas fa-chevron-right arrow"></i>
+        </a>
+        <div class="submenu">
+            <a href="jadwaladmin.html" class="submenu-item" onclick="showJadwalPage()">
+                <i class="fas fa-calendar-alt"></i>
+                Jadwal Kuliah
+            </a>
+            <a href="krsadmin.html" class="submenu-item" onclick="showKRSPage()">
+                <i class="fas fa-file-alt"></i>
+                KRS
+            </a>
+            <a href="khsadmin.html" class="submenu-item" onclick="showKHSPage()">
+                <i class="fas fa-chart-bar"></i>
+                KHS
+            </a>
+        </div>
+    </div>
+    <a href="billingadmin.html" class="menu-item billing" onclick="showBillingSPPage()">
+        <i class="fas fa-file-invoice-dollar"></i>
+        Billing SP
+    </a>
+    <a href="editadmin.html" class="menu-item edit" onclick="showEditUserPage()">
+        <i class="fas fa-user-edit"></i>
+        Edit User
+    </a>
+    <a href="#" class="menu-item logout" onclick="showLogout()">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+    </a>
+</nav>
+    <div id="KRSContent" class="KRS">
+        <h1>Kartu Rencana Studi</h1>
+        <h2>NPM:</h2>
+        <h3>NAMA:</h3>
+        <h4>IPK:</h4>
+        <h5><button onclick="editSchedule()">Edit KRS</button></h5>
+        <table class="tabel-KRS">
+            <thead>
+             <tr>
+                <th>No</th>
+                <th>Kode MK</th>
+                <th>Mata Kuliah</th>
+                <th>B/U</th>
+                <th>Kelas</th>
+                <th>Jadwal</th>
+                <th>SKS</th>
+            </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+        <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
+    </div>
+</div>
+    <script src="dashboardadmin.js"></script>         
+</body>
+</html>

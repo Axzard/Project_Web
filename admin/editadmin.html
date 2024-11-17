@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="editadmin.css">
+    <link rel="stylesheet" href="styles.homeadmin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-home">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+<!-- Beranda -->
+<div class="container">
+<nav class="beranda">
+<a href="#" class="menu-item" onclick="showDashboard()">
+    <i class="fas fa-home"></i>
+    Beranda
+</a>
+<div class="menu-item-menutup">
+    <a href="#" class="menu-item">
+        <i class="fas fa-graduation-cap"></i>
+        Akademik
+        <i class="fas fa-chevron-right arrow"></i>
+    </a>
+    <div class="submenu">
+        <a href="jadwaladmin.html" class="submenu-item" onclick="showJadwalPage()">
+            <i class="fas fa-calendar-alt"></i>
+            Jadwal Kuliah
+        </a>
+        <a href="krsadmin.html" class="submenu-item" onclick="showKRSPage()">
+            <i class="fas fa-file-alt"></i>
+            KRS
+        </a>
+        <a href="khsadmin.html" class="submenu-item" onclick="showKHSPage()">
+            <i class="fas fa-chart-bar"></i>
+            KHS
+        </a>
+    </div>
+</div>
+<a href="billingadmin.html" class="menu-item billing" onclick="showBillingSPPage()">
+    <i class="fas fa-file-invoice-dollar"></i>
+    Billing SP
+</a>
+<a href="editadmin.html" class="menu-item edit" onclick="showEditUserPage()">
+    <i class="fas fa-user-edit"></i>
+    Edit User
+</a>
+<a href="#" class="menu-item logout" onclick="showLogout()">
+    <i class="fas fa-sign-out-alt"></i>
+    Logout
+</a>
+</nav>
+    <div class="container">
+    <div id="edituserContent" class="edituser">
+        <h1>Edit Admin Profile</h1>
+        <form class="edit-user-form">
+          <div class="form-group">
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter your Username">
+          </div>
+          <div class="form-group">
+            <label for="Nama">Nama</label>
+            <input type="text" id="Nama" name="Nama" placeholder="Enter your Nama">
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="text" id="Password" name="Password" placeholder="Enter your Password">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="save-button">Save</button>
+            <button type="reset" class="cancel-button">Cancel</button>
+          </div>
+        </form>   
+    <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
+    </div>
+</div> 
+  <script src="dashboardadmin.js"></script>
+</body>
+</html>
