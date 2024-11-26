@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kartu Rencana Studi (KRS)</title>
-    <link rel="stylesheet" href="khsuser.css">
+    <title>Belanja KRS</title>
+    <link rel="stylesheet" href="belanjakrs.css">
     <link rel="stylesheet" href="styles.homeuser.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -55,39 +55,46 @@
         Logout
     </a>
 </nav>
-    <div id="KHSContent" class="KHS">
-        <h1>Kartu Hasil Studi</h1>
-        <h2>NPM:</h2>
-        <h3>NAMA:</h3>
-        <h4>IPK:</h4>
-        <h5><button onclick="editKRSSchedule()">Cetak KHS</button></h5>
-        <table class="tabel-KHS">
-            <thead>
-             <tr>
+<div id="KRSContent" class="KRS">
+    <h1>Belanja KRS</h1>
+    <table>
+        <thead>
+            <tr>
                 <th>No</th>
                 <th>Kode MK</th>
                 <th>Mata Kuliah</th>
-                <th>Nilai Huruf</th>
-                <th>Bobot</th>
-                <th>Mutu</th>
-                <th>SKS</th>
+                <th>Jadwal</th>
+                <th>Pilih</th>
             </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    </tbody>
-                </table>
-        <a href="homeuser.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
-    </div>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" name="matkul1" value="MK001"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" name="matkul2" value="MK002"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox" name="matkul3" value="MK003"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="submitKRS()">Submit KRS</button>
+    <a href="homeuser.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
 </div>
-    <script src="dashboarduser.js"></script>         
+</div>
+    <script src="krs.js"></script>
 </body>
 </html>
