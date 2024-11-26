@@ -12,30 +12,14 @@ p{
 
 /* Tombol Edit Billing*/
 #editButton {
-    background-color: #c1bb0c; 
-    color: black; 
-    border: none;
-    border-radius: 5px; 
-    padding: 10px 40px; 
-    font-size: 14px; 
-    cursor: pointer; 
-}
-#editButton:hover {
-    background-color: #17a13a; 
-}
-/* Tombol Edit Jadwal*/
-#saveButton {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  #saveButton {
     background-color: #28a745;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 40px;
-    font-size: 14px; 
-    cursor: pointer;
-}
-#saveButton:hover {
-    background-color: #1e7e34;
-}
+    color: white;
+  }
 /* Tombol Edit balik ke dasboard */
 button {
     padding: 8px 12px;
