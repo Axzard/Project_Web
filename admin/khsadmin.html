@@ -55,41 +55,45 @@
         Logout
     </a>
 </nav>
-    <div id="KHSContent" class="KHS">
-        <h1>Kartu Hasil Studi</h1>
-        <h2>NPM:</h2>
-        <h3>NAMA:</h3>
-        <h4>IPK:</h4>
-        <h5></h5>
-        <table class="tabel-KHS">
-            <thead>
-             <tr>
+<div id="KHSContent" class="KHS">
+    <h1>Kartu Hasil Studi</h1>
+    <h2>NPM: <span id="npm"></span></h2>
+    <h3>Nama: <span id="nama"></span></h3>
+    <h4>IPK: <span id="ipk"></span></h4>
+    <table class="tabel-KHS">
+        <thead>
+            <tr>
                 <th>No</th>
                 <th>Kode MK</th>
                 <th>Mata Kuliah</th>
                 <th>Nilai Huruf</th>
-                <th>Kelas</th>
-                <th>Jadwal</th>
+                <th>Bobot</th>
+                <th>SKS</th>
+                <th>Mutu</th>
                 <th>SKS</th>
                 <th>Edit</th>
             </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button onclick="editSchedule()">Edit</button><button id="saveButton">Save</button></td>
-                    </tr>
-                    </tbody>
-                </table>
-        <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
-    </div>
-    <script src="dashboardadmin.js"></script>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                <a href="editkhsadmin.html"><button onclick="editSchedule('1','MK001', 'Pemrograman Dasar', 'A', 4.00, 3, 12.00)">Edit</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
 </div>
+</div>
+    <script src="dashboardadmin.js"></script>
+    <script src="khsadmin.js"></script> 
 </body>
 </html>

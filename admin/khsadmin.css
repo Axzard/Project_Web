@@ -37,11 +37,11 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .tabel-KHS th{
-    color: #002855;
+    background-color: #002855;
+    color: #ddd;
     padding: 20px;
     font-size: 14px;
     border: 1px solid #ddd;
-    background-color: #f2f2f2;
     font-weight: bold;
     text-align: center;
 }

@@ -16,12 +16,6 @@ saveButton.onclick = () => {
   billingText.contentEditable = "false";
   toggleButtons();
 };
-
-// Event untuk kembali ke dashboard
-showDashboard.onclick = () => {
-  window.location.href = "homeadmin.html"; // Ubah dengan URL dashboard Anda
-};
-
 // Fungsi untuk mengubah tampilan tombol
 function toggleButtons() {
   const isEditing = billingText.contentEditable === "true";

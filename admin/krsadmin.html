@@ -55,14 +55,14 @@
         Logout
     </a>
 </nav>
-    <div id="KRSContent" class="KRS">
-        <h1>Kartu Rencana Studi</h1>
-        <h2>NPM:</h2>
-        <h3>NAMA:</h3>
-        <h4>IPK:</h4>
-        <table class="tabel-KRS">
-            <thead>
-             <tr>
+<div id="KRSContent" class="KRS">
+    <h1>Kartu Rencana Studi</h1>
+    <h2>NPM: <span id="npm"></span></h2>
+    <h3>Nama: <span id="nama"></span></h3>
+    <h4>IPK: <span id="ipk"></span></h4>
+    <table class="tabel-KRS">
+        <thead>
+            <tr>
                 <th>No</th>
                 <th>Kode MK</th>
                 <th>Mata Kuliah</th>
@@ -72,23 +72,25 @@
                 <th>SKS</th>
                 <th>Edit</th>
             </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><button onclick="editSchedule()">Edit</button><button id="saveButton">Save</button></td>
-                    </tr>
-                    </tbody>
-                </table>
-        <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
-    </div>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                <a href="editkrsadmin.html"><button onclick="editSchedule('MK001', 'Pemrograman Dasar', 'B', 'A', 'Senin, 08:00-10:00', 3)">Edit</button></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="homeadmin.html"><button onclick="showDashboard()">Kembali ke Dashboard</button></a>
 </div>
-    <script src="dashboardadmin.js"></script>         
+</div>
+    <script src="dashboardadmin.js"></script>  
 </body>
 </html>

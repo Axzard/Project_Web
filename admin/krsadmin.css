@@ -38,7 +38,8 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .tabel-KRS th{
-    color: #002855;
+    background-color: #002855;
+    color: #ddd;
     padding: 20px;
     text-align: center;
     font-size: 14px;

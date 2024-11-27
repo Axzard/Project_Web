@@ -41,17 +41,6 @@
 .tabel-jadwal tr:hover {
     background-color: #f1f1f1;
 }
-/* Tombol Edit Jadwal*/
-#saveButton {
-    background-color: #28a745;
-    color: black;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 14px; 
-}
-#saveButton:hover {
-    background-color: #1e7e34;
-}
 /* Tombol edit*/
 button {
     padding: 5px 10px;
